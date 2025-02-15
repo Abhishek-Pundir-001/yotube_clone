@@ -9,7 +9,7 @@ import user_profile from '../../assets/user_profile.jpg'
 function PlayVideo() {
     return (
         <div className='play-video w-[60%]'>
-            <video className='w-[100%]' src={video1} controls autoPlay muted></video>
+            <video className='w-[100%] rounded-lg' src={video1} controls autoPlay muted></video>
             <h3 className='mt-2.5 font-medium text-lg'>complete information about web development</h3>
             <div className="video-info flex justify-between items-center mt-2.5 text-lg">
                 <p className=''>1525 views &bull; 2 days ago</p>
@@ -33,67 +33,68 @@ function PlayVideo() {
                 <p className='text-sm mb-1.5 text-[#5a5a5a]'>Make your learning joyful</p>
                 <p className='text-sm mb-1.5 text-[#5a5a5a]'>Subscribe the channel to watch more tutorials on web development</p>
                 <hr />
-                <h4 className='text-sm text-[#5a5a5a] mt-4'>130 Coments</h4>
-                <div className="comment flex items-start border gap-2">
-                    <img className='w-12 rounded-full' src={user_profile} alt="" />
+                <h4 className='text-sm text-[#5a5a5a] mt-4 mb-2'>130 Coments</h4>
+                <div className="comment flex items-start gap-2 mb-4">
+                    <img className='w-10 rounded-full' src={user_profile} alt="" />
                     <div>
                         <h3 className='text-sm text-[#5a5a5a]'>Jack Nicholsan <span>1 day ago</span></h3>
                         <p className='text-[1rem]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente nemo molestiae. Maxime natus quasi tenetur aperiam ipsum eaque fuga.</p>
-                        <div className='comment-action flex'>
-                          <img src={like} alt="" />
-                          <span>244</span>
-                          <img src={dislike} alt="" />
+                        <div className='comment-action flex items-center mt-2'>
+                          <img className='w-5 mr-2' src={like} alt="" />
+                          <span className='text-sm text-[#5a5a5a]'>244</span>
+                          <img className='w-5 ml-4' src={dislike} alt="" />
                         </div>
                     </div>
                 </div>
-                <div className="comment">
-                    <img src={user_profile} alt="" />
+                <div className="comment flex items-start gap-2 mb-4">
+                    <img className='w-10 rounded-full' src={user_profile} alt="" />
                     <div>
-                        <h3>Jack Nicholsan <span>1 day ago</span></h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente nemo molestiae. Maxime natus quasi tenetur aperiam ipsum eaque fuga.</p>
-                        <div className='comment-action flex'>
-                          <img src={like} alt="" />
-                          <span>244</span>
-                          <img src={dislike} alt="" />
+                        <h3 className='text-sm text-[#5a5a5a]'>Jack Nicholsan <span>1 day ago</span></h3>
+                        <p className='text-[1rem]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente nemo molestiae. Maxime natus quasi tenetur aperiam ipsum eaque fuga.</p>
+                        <div className='comment-action flex items-center mt-2 mb-4'>
+                          <img className='w-5 mr-2' src={like} alt="" />
+                          <span className='text-sm text-[#5a5a5a]'>244</span>
+                          <img className='w-5 ml-4' src={dislike} alt="" />
                         </div>
                     </div>
                 </div>
-                <div className="comment">
-                    <img src={user_profile} alt="" />
+                <div className="comment flex items-start gap-2 mb-4">
+                    <img className='w-10 rounded-full' src={user_profile} alt="" />
                     <div>
-                        <h3>Jack Nicholsan <span>1 day ago</span></h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente nemo molestiae. Maxime natus quasi tenetur aperiam ipsum eaque fuga.</p>
-                        <div className='comment-action flex'>
-                          <img src={like} alt="" />
-                          <span>244</span>
-                          <img src={dislike} alt="" />
+                        <h3 className='text-sm text-[#5a5a5a]'>Jack Nicholsan <span>1 day ago</span></h3>
+                        <p className='text-[1rem]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente nemo molestiae. Maxime natus quasi tenetur aperiam ipsum eaque fuga.</p>
+                        <div className='comment-action flex items-center mt-2'>
+                          <img className='w-5 mr-2' src={like} alt="" />
+                          <span className='text-sm text-[#5a5a5a]'>244</span>
+                          <img className='w-5 ml-4' src={dislike} alt="" />
                         </div>
                     </div>
                 </div>
-                <div className="comment">
-                    <img src={user_profile} alt="" />
+                <div className="comment flex items-start gap-2 mb-4">
+                    <img className='w-10 rounded-full' src={user_profile} alt="" />
                     <div>
-                        <h3>Jack Nicholsan <span>1 day ago</span></h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente nemo molestiae. Maxime natus quasi tenetur aperiam ipsum eaque fuga.</p>
-                        <div className='comment-action flex'>
-                          <img src={like} alt="" />
-                          <span>244</span>
-                          <img src={dislike} alt="" />
+                        <h3 className='text-sm text-[#5a5a5a]'>Jack Nicholsan <span>1 day ago</span></h3>
+                        <p className='text-[1rem]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente nemo molestiae. Maxime natus quasi tenetur aperiam ipsum eaque fuga.</p>
+                        <div className='comment-action flex items-center mt-2'>
+                          <img className='w-5 mr-2' src={like} alt="" />
+                          <span className='text-sm text-[#5a5a5a]'>244</span>
+                          <img className='w-5 ml-4' src={dislike} alt="" />
                         </div>
                     </div>
                 </div>
-                <div className="comment">
-                    <img src={user_profile} alt="" />
+                <div className="comment flex items-start gap-2 mb-4">
+                    <img className='w-10 rounded-full' src={user_profile} alt="" />
                     <div>
-                        <h3>Jack Nicholsan <span>1 day ago</span></h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente nemo molestiae. Maxime natus quasi tenetur aperiam ipsum eaque fuga.</p>
-                        <div className='comment-action flex'>
-                          <img src={like} alt="" />
-                          <span>244</span>
-                          <img src={dislike} alt="" />
+                        <h3 className='text-sm text-[#5a5a5a]'>Jack Nicholsan <span>1 day ago</span></h3>
+                        <p className='text-[1rem]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente nemo molestiae. Maxime natus quasi tenetur aperiam ipsum eaque fuga.</p>
+                        <div className='comment-action flex items-center mt-2'>
+                          <img className='w-5 mr-2' src={like} alt="" />
+                          <span className='text-sm text-[#5a5a5a]'>244</span>
+                          <img className='w-5 ml-4' src={dislike} alt="" />
                         </div>
                     </div>
                 </div>
+               
             </div>
         </div>
     )
