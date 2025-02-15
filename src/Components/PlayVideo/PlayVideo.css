@@ -1,0 +1,9 @@
+.video-info img{
+    height: 1.3rem;
+}
+.video-info span{
+    display: inline-flex;
+    gap: .5rem;
+    margin-left: .8rem;
+    align-items: center;
+}
