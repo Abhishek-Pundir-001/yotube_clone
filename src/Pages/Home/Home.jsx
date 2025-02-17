@@ -1,17 +1,19 @@
+import { useState } from 'react'
 import Feed from '../../Components/Feed/Feed'
 import Sidebar from '../../Components/Sdiebar/Sidebar'
 import './Home.css'
 
 function Home({ sideBar }) {
+    const [category,setCategory] = useState(0)
     return (
         <>
-            <Sidebar sideBar={sideBar} />
+            <Sidebar sideBar={sideBar} category={category} setCategory={setCategory}/>
             <div className={`container ${sideBar ? 'pl-[17%]' : 'pl-[4%]'} transition-all ease-in-out delay-500`}>
-                <Feed />
+                <Feed  category={category}/>
             </div>
 
         </>
     )
 }
 
-export default Home
+export default Home;

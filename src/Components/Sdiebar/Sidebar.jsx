@@ -13,38 +13,37 @@ import simon from '../../assets/simon.png'
 import tom from '../../assets/tom.png'
 import megan from '../../assets/megan.png'
 import cameron from '../../assets/cameron.png'
-import { Link } from 'react-router-dom'
-function Sidebar({sideBar}) {
+function Sidebar({sideBar,category,setCategory}) {
     return (
         <div 
         className={`sidebar ${sideBar ? 'w-[15%]' :'w-[4%]'} overflow-hidden transition-all ease-in-out delay-300 bg-white h-[100vh] fixed top-0 pl-[2%] pt-20`}>
             <div className="shortcut-links">
-                <Link to={'/'} className="side-link">
-                    <img src={home} alt="" /><p>Home</p>
-                </Link>
-                <div className="side-link">
-                    <img src={game_icon} alt="" /><p>Gaming</p>
+                <div className="side-link" onClick={()=>setCategory(0)}>
+                    <img className={`${category == 0 ? 'pb-1 border-b-2 ':""}`} src={home} alt="" /><p>Home</p>
                 </div>
-                <div className="side-link">
-                    <img src={automobiles} alt="" /><p>Automobiles</p>
+                <div className="side-link" onClick={()=>setCategory(20)}>
+                    <img className={`${category == 20 ? 'pb-1 border-b-2 ':""}`} src={game_icon} alt="" /><p>Gaming</p>
                 </div>
-                <div className="side-link">
-                    <img src={sports} alt="" /><p>Sports</p>
+                <div className="side-link" onClick={()=>setCategory(2)}>
+                    <img className={`${category === 2 ? 'pb-1 border-b-2 ':""}`} src={automobiles} alt="" /><p>Automobiles</p>
                 </div>
-                <div className="side-link">
-                    <img src={entertainment} alt="" /><p>Entertainment</p>
+                <div className="side-link" onClick={()=>setCategory(17)}>
+                    <img className={`${category === 17 ? 'pb-1 border-b-2 ':""}`} src={sports} alt="" /><p>Sports</p>
                 </div>
-                <div className="side-link">
-                    <img src={tech} alt="" /><p>Technology</p>
+                <div className="side-link" onClick={()=>setCategory(24)}>
+                    <img className={`${category === 24 ? 'pb-1 border-b-2 ':""}`} src={entertainment} alt="" /><p>Entertainment</p>
                 </div>
-                <div className="side-link">
-                    <img src={music} alt="" /><p>Music</p>
+                <div className="side-link" onClick={()=>setCategory(28)}>
+                    <img className={`${category === 28 ? 'pb-1 border-b-2 ':""}`} src={tech} alt="" /><p>Technology</p>
                 </div>
-                <div className="side-link">
-                    <img src={blogs} alt="" /><p>Blogs</p>
+                <div className="side-link" onClick={()=>setCategory(10)}>
+                    <img className={`${category === 10 ? 'pb-1 border-b-2 ':""}`} src={music} alt="" /><p>Music</p>
                 </div>
-                <div className="side-link">
-                    <img src={news} alt="" /><p>News</p>
+                <div className="side-link" onClick={()=>setCategory(22)}>
+                    <img className={`${category === 22 ? 'pb-1 border-b-2 ':""}`} src={blogs} alt="" /><p>Blogs</p>
+                </div>
+                <div className="side-link" onClick={()=>setCategory(25)}>
+                    <img className={`${category === 25 ? 'pb-1 border-b-2 ':""}`} src={news} alt="" /><p>News</p>
                 </div>
                 <hr className='my-5 w-[80%]' />
             </div>

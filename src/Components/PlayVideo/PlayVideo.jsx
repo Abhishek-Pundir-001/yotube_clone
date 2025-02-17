@@ -27,7 +27,7 @@ function PlayVideo() {
                     <p className='text-black font-medium text-lg'>Web development</p>
                     <span className='text-sm'>1M subscriber</span>
                 </div>
-                <button className='bg-[#212121] text-amber-50 px-8 py-2 text-lg rounded-md'>Subscribe</button>
+                <button className='bg-[#212121] text-amber-50 px-8 py-2 text-lg rounded-3xl'>Subscribe</button>
             </div>
             <div className='vid-desc pl-14 my-4'>
                 <p className='text-sm mb-1.5 text-[#5a5a5a]'>Make your learning joyful</p>
