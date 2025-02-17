@@ -13,16 +13,16 @@ import simon from '../../assets/simon.png'
 import tom from '../../assets/tom.png'
 import megan from '../../assets/megan.png'
 import cameron from '../../assets/cameron.png'
-function Sidebar({sideBar,category,setCategory}) {
+function Sidebar({children,sideBar,category,setCategory}) {
     return (
         <div 
         className={`sidebar ${sideBar ? 'w-[15%]' :'w-[4%]'} overflow-hidden transition-all ease-in-out delay-300 bg-white h-[100vh] fixed top-0 pl-[2%] pt-20`}>
             <div className="shortcut-links">
                 <div className="side-link" onClick={()=>setCategory(0)}>
-                    <img className={`${category == 0 ? 'pb-1 border-b-2 ':""}`} src={home} alt="" /><p>Home</p>
+                    <img className={`${category === 0 ? 'pb-1 border-b-2 ':""}`} src={home} alt="" /><p>Home</p>
                 </div>
                 <div className="side-link" onClick={()=>setCategory(20)}>
-                    <img className={`${category == 20 ? 'pb-1 border-b-2 ':""}`} src={game_icon} alt="" /><p>Gaming</p>
+                    <img className={`${category === 20 ? 'pb-1 border-b-2 ':""}`} src={game_icon} alt="" /><p>Gaming</p>
                 </div>
                 <div className="side-link" onClick={()=>setCategory(2)}>
                     <img className={`${category === 2 ? 'pb-1 border-b-2 ':""}`} src={automobiles} alt="" /><p>Automobiles</p>

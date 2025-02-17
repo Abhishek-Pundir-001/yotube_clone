@@ -25,7 +25,7 @@ function Feed({ category }) {
     return (
         <div className='Feed flex justify-evenly space-y-4 flex-wrap pt-[2%]'>
             {data && data.map((item, index) => {
-                return( <Link to={`video/${item.snippet.categoryId}/${item.id}`} className="card">
+                return( <Link to={`video/${item.snippet.categoryId}/${item.id}`} key={index} className="card">
                     <img src={item.snippet.thumbnails.medium.url} alt="" />
                     <h2>{item.snippet.title}</h2>
                     <h3>{item.snippet.channelTitle}</h3>

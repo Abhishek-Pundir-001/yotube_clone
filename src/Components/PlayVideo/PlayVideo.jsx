@@ -6,10 +6,11 @@ import share from '../../assets/share.png'
 import save from '../../assets/save.png'
 import jack from '../../assets/jack.png'
 import user_profile from '../../assets/user_profile.jpg'
-function PlayVideo() {
+function PlayVideo({videoId}) {
     return (
         <div className='play-video w-[60%]'>
-            <video className='w-[100%] rounded-lg' src={video1} controls autoPlay muted></video>
+            {/* <video className='w-[100%] rounded-lg' src={video1} controls autoPlay muted></video> */}
+            <iframe className='w-[100%] h-[23rem] rounded-lg' src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`} allow='autoplay'></iframe>
             <h3 className='mt-2.5 font-medium text-lg'>complete information about web development</h3>
             <div className="video-info flex justify-between items-center mt-2.5 text-lg">
                 <p className=''>1525 views &bull; 2 days ago</p>
