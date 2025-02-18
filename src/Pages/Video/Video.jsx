@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import PlayVideo from '../../Components/PlayVideo/PlayVideo';
 import Recommended from '../../Components/Recommended/Recommended';
-import Sidebar from '../../Components/Sdiebar/Sidebar';
+
 import './Video.css'
 function Video() {
     const { categoryId, videoId } = useParams()
