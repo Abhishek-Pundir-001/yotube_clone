@@ -8,7 +8,7 @@ function Home({ sideBar }) {
     return (
         <>
             <Sidebar sideBar={sideBar} category={category} setCategory={setCategory}/>
-            <div className={`container ${sideBar ? 'pl-[17%]' : 'pl-[4%]'} transition-all ease-in-out delay-500`}>
+            <div className={`container ${sideBar ? 'md:pl-[15%]' : 'md:pl-[4%]'} px-[2rem] transition-all ease-in-out delay-500`}>
                 <Feed  category={category}/>
             </div>
 

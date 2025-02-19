@@ -11,7 +11,7 @@ const [sideBar,setSideBar] = useState(true)
       <Navbar setSideBar={setSideBar}/>
       <Routes>
         <Route path="/" element={<Home sideBar={sideBar}/>} />
-        <Route path="/video/:catgoryId/:videoId" element={<Video />} />
+        <Route path="/video/:categoryId/:videoId" element={<Video />} />
       </Routes>
     </div>
   )
