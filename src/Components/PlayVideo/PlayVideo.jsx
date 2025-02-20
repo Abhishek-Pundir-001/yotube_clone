@@ -48,7 +48,7 @@ function PlayVideo() {
     return (
         <div className='play-video md:w-[60%] w-[100%]'>
             {/* <video className='w-[100%] rounded-lg' src={video1} controls autoPlay muted></video> */}
-            <iframe className='w-[100%] h-[15rem] rounded-lg' src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`} allow='autoplay' allowfullscreen="allowfullscreen"></iframe>
+            <iframe className='w-[100%] h-[15rem] md:h-[22rem] rounded-lg' src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`} allow='autoplay' allowfullscreen="allowfullscreen"></iframe>
             <h3 className='mt-2.5 font-medium text-lg'>{apiData && apiData.snippet.title}</h3>
             <div className="video-info flex justify-between items-center mt-2.5 md:text-lg text-xs">
                 <p className=''>{apiData && convertor(apiData.statistics.viewCount) + " views"} &bull; {moment(apiData && apiData.snippet.publishedAt).fromNow()}</p>
